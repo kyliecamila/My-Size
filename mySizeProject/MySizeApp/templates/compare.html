@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        *수치: (해당사이즈 수치) - (내 수치)
+        <br><br>
+        {% for info in sizeNum %}
+        <div>{{info.sizeName}}</div>
+        <div>총장 | </div>
+        <div>어깨넓이 | </div>
+        <div>가슴단면 |  </div>
+        <div>소매길이 |  </div>
+        <br>
+        {% endfor %}
+
+       
+        {% for info in totalArr %}
+
+        <div>{{info }}  </div>
+        
+        {% endfor %}
+        <!-- {% for info in targetArr %}
+
+        <div>{{info }}  </div>
+        
+
+        {% endfor %} -->
+    </div>
+</body>
+</html>

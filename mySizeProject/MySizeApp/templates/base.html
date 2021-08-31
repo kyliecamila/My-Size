@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무신사 사이즈 비교</title>
+    <link href="{% static 'base.css' %}" type="text/css" rel="stylesheet">
+    {% block css %}
+
+    {% endblock css %}
+</head>
+
+<body>
+    <nav class="nav_area">
+        <li><a href="{% url 'topView' %}" >상의</a></li>
+        <li>하의(예정)</li>
+        <li>아우터(예정)</li>
+        
+    </nav>
+
+    {% block title %}
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+
+
+</body>
+
+</html>
